@@ -19,7 +19,7 @@ public class SampleSelGoogleTest2 {
 		driver.quit();
 	}
 	@Test
-	public void simpleTest() {
+	public void sampleSelGoogleTest2() {
 		driver.get("http://www.google.com/");
 		System.out.println("driver.getTitle() " + driver.getTitle());
 		System.out.println("Expected String " + "Google");
