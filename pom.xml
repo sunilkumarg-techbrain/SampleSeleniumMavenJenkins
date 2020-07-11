@@ -73,7 +73,7 @@
 					</systemPropertyVariables>
 					<!-- <allureDownloadUrl>https://bintray.com/qameta/generic/download_file?file_path=io%2Fqameta%2Fallure%2Fallure%2F${allure.version%2Fallure-${allure.version}.zip</allureDownloadUrl> -->
 					<resultsDirectory>../allure-results</resultsDirectory>
-					<reportDirectory>${project.build.directory}/allure-reports/${browser}</reportDirectory>
+					<reportDirectory>${project.build.directory}/allure-reports/CHROME</reportDirectory>
 					<reportVersion>${allure.version}</reportVersion>
 				</configuration>
 			</plugin>
