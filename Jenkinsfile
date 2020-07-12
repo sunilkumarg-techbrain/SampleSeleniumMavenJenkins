@@ -2,11 +2,6 @@ pipeline {
    agent {
         label "master"
          }
-		 
-   tools {
-        maven 'Maven 3.3.9'
-        jdk 'jdk8'
-    }
    stages {
 	         stage ('GIT checkout'){
 	             steps {
@@ -18,15 +13,19 @@ pipeline {
 			 stage ('Maven Test Execution'){
 	             steps {
 	                 script  {
-	                       sh "mvn clean install"
-		                   } 
+					 withMaven(maven: 'Maven 3') {
+	                                  sh "mvn clean install"
+		                              }  
+						   } 
 		           }
 		       }
 			 stage ('Allure Report Generation'){
 	             steps {
+				 
 	                 script  {
-		                   sh "mvn allure:report"
-
+					 withMaven(maven: 'Maven 3') {
+	                                  sh "mvn allure:report"
+		                              }  
 		                   } 
 		           }
 		       }
