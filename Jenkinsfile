@@ -2,11 +2,20 @@ pipeline {
    agent {
         label "master"
          }
+		 
+   tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+    }
    stages {
 	         stage ('GIT checkout'){
 	             steps {
 	                 script  {
-		                   git "https://github.com/sunilkumarg-techbrain/SampleSeleniumMavenJenkins"
+					       sh '''
+                              echo "PATH = ${PATH}"
+                              echo "M2_HOME = ${M2_HOME}"
+                              '''
+					       git "https://github.com/sunilkumarg-techbrain/SampleSeleniumMavenJenkins"
 		                   } 
 		           }
 		       }
