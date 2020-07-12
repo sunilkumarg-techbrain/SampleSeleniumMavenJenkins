@@ -10,11 +10,7 @@ pipeline {
    stages {
 	         stage ('GIT checkout'){
 	             steps {
-	                 script  {
-					       sh '''
-                              echo "PATH = ${PATH}"
-                              echo "M2_HOME = ${M2_HOME}"
-                              '''
+	                 script  {					       
 					       git "https://github.com/sunilkumarg-techbrain/SampleSeleniumMavenJenkins"
 		                   } 
 		           }
