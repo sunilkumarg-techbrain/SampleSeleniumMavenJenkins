@@ -1,7 +1,5 @@
 pipeline {
-   agent {
-        label "master"
-         }
+   agent any
    stages {
 	         stage ('GIT checkout'){
 	             steps {
@@ -12,21 +10,17 @@ pipeline {
 		       }
 			 stage ('Maven Test Execution'){
 	             steps {
-	                 script  {
-					 withMaven(maven: 'Maven 3') {
-	                                  sh "mvn clean install"
-		                              }  
-						   } 
-		           }
+	                 script  {	
+			                bat(/mvn clean install/)      
+		                      }        
+					} 
+		          
 		       }
 			 stage ('Allure Report Generation'){
 	             steps {
-				 
-	                 script  {
-					 withMaven(maven: 'Maven 3') {
-	                                  sh "mvn allure:report"
-		                              }  
-		                   } 
+				     script  {	
+			                bat(/mvn allure:report/)      
+		                      } 
 		           }
 		       }
 			   			 
