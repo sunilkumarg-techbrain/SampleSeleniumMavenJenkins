@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22086" started-at="2020-06-27T05:02:29Z" finished-at="2020-06-27T05:02:51Z">
+  <suite started-at="2023-07-25T16:09:50Z" name="Sample Sel Maven Jenkins TS" finished-at="2023-07-25T16:09:58Z" duration-ms="8449">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22086" started-at="2020-06-27T05:02:29Z" finished-at="2020-06-27T05:02:51Z">
-      <class name="com.selenium.SampleSelenium.GridTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.selenium.SampleSelenium.GridTest@5af97850]" name="setup" is-config="true" duration-ms="14775" started-at="2020-06-27T10:32:29Z" finished-at="2020-06-27T10:32:44Z">
+    <test started-at="2023-07-25T16:09:50Z" name="Sample Selenium Maven Jenkins Test Suite - Thread 1" finished-at="2023-07-25T16:09:58Z" duration-ms="8317">
+      <class name="com.selenium.SampleSelenium.SampleSelGoogleTest1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest1@50029372]" started-at="2023-07-25T21:39:50Z" name="setup" finished-at="2023-07-25T21:39:54Z" duration-ms="4255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="simpleTest()[pri:0, instance:com.selenium.SampleSelenium.GridTest@5af97850]" name="simpleTest" duration-ms="6610" started-at="2020-06-27T10:32:44Z" finished-at="2020-06-27T10:32:50Z">
+        <test-method signature="sampleSelGoogleTest1()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest1@50029372]" started-at="2023-07-25T21:39:54Z" name="sampleSelGoogleTest1" finished-at="2023-07-25T21:39:57Z" duration-ms="2892" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- simpleTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.selenium.SampleSelenium.GridTest@5af97850]" name="afterTest" is-config="true" duration-ms="322" started-at="2020-06-27T10:32:50Z" finished-at="2020-06-27T10:32:51Z">
+        </test-method> <!-- sampleSelGoogleTest1 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest1@50029372]" started-at="2023-07-25T21:39:57Z" name="afterTest" finished-at="2023-07-25T21:39:58Z" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.selenium.SampleSelenium.GridTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.selenium.SampleSelenium.SampleSelGoogleTest1 -->
+    </test> <!-- Sample Selenium Maven Jenkins Test Suite - Thread 1 -->
+    <test started-at="2023-07-25T16:09:50Z" name="Sample Selenium Maven Jenkins Test Suite - Thread 2" finished-at="2023-07-25T16:09:58Z" duration-ms="8449">
+      <class name="com.selenium.SampleSelenium.SampleSelGoogleTest2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest2@18ece7f4]" started-at="2023-07-25T21:39:50Z" name="setup" finished-at="2023-07-25T21:39:54Z" duration-ms="4471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sampleSelGoogleTest2()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest2@18ece7f4]" started-at="2023-07-25T21:39:55Z" name="sampleSelGoogleTest2" finished-at="2023-07-25T21:39:57Z" duration-ms="2822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleSelGoogleTest2 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.selenium.SampleSelenium.SampleSelGoogleTest2@18ece7f4]" started-at="2023-07-25T21:39:57Z" name="afterTest" finished-at="2023-07-25T21:39:58Z" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.selenium.SampleSelenium.SampleSelGoogleTest2 -->
+    </test> <!-- Sample Selenium Maven Jenkins Test Suite - Thread 2 -->
+  </suite> <!-- Sample Sel Maven Jenkins TS -->
 </testng-results>

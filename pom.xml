@@ -7,7 +7,7 @@
 		<aspectj.version>1.8.10</aspectj.version>
 		<allure.version>2.3.4</allure.version>
 		<allure.maven.version>2.8</allure.maven.version>
-		<allure.testng.version>2.0-BETA17</allure.testng.version>
+		<allure.testng.version>2.9.0</allure.testng.version>
 		<jre.level>1.7</jre.level>
 		<jdk.level>1.7</jdk.level>
 	</properties>
